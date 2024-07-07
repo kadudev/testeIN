@@ -1,0 +1,427 @@
+@media (min-width: 769px) {
+    header {
+        flex-direction: row;
+    }
+
+    .menu {
+        display: flex; /* Mostrar o menu completo em telas maiores */
+        flex-direction: row;
+    }
+
+    .menu a {
+        padding: 0 10px;
+        border-top: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .submenu, .submenu-resources {
+        display: none;
+        position: absolute;
+        background-color: #3B3738;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .submenu a, .submenu-resources a {
+        background-color: #3B3738;
+        color: #FFDDB8;
+    }
+
+    .menu-item:hover .submenu, .menu-item:hover .submenu-resources {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    #cover {
+        position: relative;
+        width: 100%;
+        height: 550px; /* Ajuste a altura conforme necessário */
+        background-image: url('../img/meninopc.png'); /* Caminho para sua imagem */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    .cover h3{
+        text-decoration: none;
+        font-weight: bold;
+        color: #FFDDB8;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #cover h3{
+        font-size: 23px;
+        margin:0;
+        align-items: center;
+        text-align: center;
+    
+    }
+    
+    #cover img{
+        margin-left: 5px;
+    }
+    
+    h2{
+        font-size: 30px;
+    }
+    
+    .juntese h2{
+        margin-top: 20px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+    
+    .retangle{
+        border: 3.2px solid #FFDDB8;
+        border-radius: 30px;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        max-width: 220px;
+        height: auto;
+    }
+    
+    
+    .sec-home h2{
+        color: #DE8938;
+        text-align: center;
+    }
+    
+    h3{
+        font-size: 17px;
+        margin: 0;
+    }
+
+    button{
+        background-color: #DE8938;
+        border: none;
+        border-radius: 88px;
+        width: 30%;
+        height: auto;
+        max-height: 50px;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    button h3{
+        color: #F2EEEB;
+    }
+
+    .artigosrecentes {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+        position: relative; /* Adicione para posicionar as setas relativas a este container */
+    }
+    .carousel {
+        position: relative;
+        overflow: hidden;
+        
+    }
+    
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+    
+    .artigo {
+        flex: 0 0 30%; /* 3 artigo por vez */
+        background-color: #FFDDB8;
+        width: 100%;
+        height: 243px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px; /* Espaço entre os artigos */
+    }
+    
+    .tit-artigo {
+        height: 37px;
+        background-color: #3B3738;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tit-artigo h2{
+        font-size: 20px;
+    }
+    
+    .conteudo{
+        color: #3B3738;
+    }
+    
+    .cont-autor{
+        padding: 10px;
+    }
+    
+    .autor{
+        color: #3B3738;
+        font-size: 11px;
+    }
+    
+    .carousel-prev,
+    .carousel-next {
+        position: absolute;
+        top: 50%; /* Ajusta para o meio verticalmente */
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.0);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 1.5rem;
+        width: 30px;
+    }
+    
+    .carousel-prev {
+        left: -30px; /* Ajusta a posição esquerda */
+    }
+    
+    .carousel-next {
+        right: -30px; /* Ajusta a posição direita */
+    }
+    
+    
+    .carousel-inner {
+        display: flex;
+        gap: 10px; /* Espaço entre os artigos */
+        transition: transform 0.5s ease;
+        padding: 10px; /* Adiciona um espaçamento interno para evitar que as setas fiquem muito próximas dos artigos */
+    }
+    
+    
+    .artigo h2{
+        color: #FFDDB8;
+    }
+
+    .form-infos{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    #name{
+        width: 40%;
+        margin: 5px;
+    }
+    #email{
+        width: 40%;
+        margin: 5px;
+    }
+
+    #message{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        font-size: medium;
+    }
+    
+    
+#cover-sobre {
+    position: relative;
+    width: 100%;
+    height: 670px; /* Ajuste a altura conforme necessário */
+    background-image: url('../img/cover-sobre-pc.png'); /* Caminho para sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+    
+}
+
+@media (min-width: 835px){
+    .artigo {
+        flex: 0 0 30%; /* Três artigos por vez */
+        background-color: #FFDDB8;
+        height: 297px;
+        width: auto;
+        padding: 5px 0 5px 0;
+        max-width: 316px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 8px; /* Espaço entre os artigos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    }
+}
+
+@media (min-width: 920px){
+    .artigo {
+        flex: 0 0 30%; /* Três artigos por vez */
+        background-color: #FFDDB8;
+        height: 297px;
+        width: auto;
+        padding: 5px 0 5px 0;
+        max-width: 316px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 9px; /* Espaço entre os artigos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    }
+}
+
+@media (min-width: 1020px){
+    .artigo {
+        flex: 0 0 30%; /* Três artigos por vez */
+        background-color: #FFDDB8;
+        height: 297px;
+        width: auto;
+        padding: 5px 0 5px 0;
+        max-width: 316px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px; /* Espaço entre os artigos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    }
+}
+
+@media (min-width: 1120px){
+    .artigo {
+        flex: 0 0 30%; /* Três artigos por vez */
+        background-color: #FFDDB8;
+        height: 297px;
+        width: auto;
+        padding: 5px 0 5px 0;
+        max-width: 316px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 11px; /* Espaço entre os artigos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    }
+}
+
+@media (min-width: 1280px){
+    .artigo {
+        flex: 0 0 30%; /* Três artigos por vez */
+        background-color: #FFDDB8;
+        height: 297px;
+        width: 340px;
+        padding: 5px 0 5px 0;
+        max-width: 316px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 13px; /* Espaço entre os artigos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    }
+}
+
+@media (min-width: 1320px){
+    .artigo {
+        flex: 0 0 30%; /* Três artigos por vez */
+        background-color: #FFDDB8;
+        height: 297px;
+        width: 350px;
+        padding: 5px 0 5px 0;
+        max-width: 350px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 15px; /* Espaço entre os artigos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    }
+}
+
+@media (min-width: 1420px){
+    .artigo {
+        flex: 0 0 30%; /* Três artigos por vez */
+        background-color: #FFDDB8;
+        height: 297px;
+        width: auto;
+        padding: 5px 0 5px 0;
+        max-width: 316px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 18px; /* Espaço entre os artigos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    }
+}
+
+@media (min-width: 1720px){
+    .artigo {
+        flex: 0 0 30%; /* Três artigos por vez */
+        background-color: #FFDDB8;
+        height: 297px;
+        width: 380px;
+        padding: 5px 0 5px 0;
+        max-width: 390px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 22px; /* Espaço entre os artigos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    }
+}
+
+@media (min-width: 1900px){
+    .artigo {
+        flex: 0 0 30%; /* Três artigos por vez */
+        background-color: #FFDDB8;
+        height: 297px;
+        width: 380px;
+        padding: 5px 0 5px 0;
+        max-width: 410px;
+        padding-top: 0;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 28px; /* Espaço entre os artigos */
+        box-sizing: border-box; /* Inclui padding e border no tamanho total */
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-prev,
+    .carousel-next {
+        font-size: 1rem;
+        padding: 5px;
+    }
+}

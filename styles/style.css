@@ -1,0 +1,391 @@
+body {
+    padding:0;
+}
+
+* {
+    font-family: "League Spartan", sans-serif;
+}
+
+.body {
+    background-color: #F2EEEB;
+    margin: 0;
+}
+
+header {
+    padding: 5px;
+    margin-top: 3px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1100; /* Acima do overlay */
+}
+
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 50px;
+    z-index: 1100; /* Acima do overlay */
+}
+
+.menu-icon div {
+    width: 35px;
+    height: 4px;
+    background-color: #DE8938;
+    margin: 4px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+.menu {
+    display: none; /* Esconder o menu completo inicialmente */
+    flex-direction: column;
+}
+
+.menu a {
+    color: #3B3738;
+    text-decoration: none;
+    border-top: 1px solid #444;
+}
+
+.submenu, .submenu-resources {
+    display: none;
+    background-color: #DE8938;
+    padding: 10px;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+   /* background-color: #3B3738;*/
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    z-index: 1000;
+    transition: max-height 400ms ease-out;
+    max-height: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    padding: 10px;
+    color: #F2EEEB;
+}
+
+.menu-icon.open .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.open .bar2 {
+    opacity: 0;
+}
+
+.menu-icon.open .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.mobile-menu.open {
+    max-height: 500px;
+    overflow-y: hidden;
+   
+}
+
+.mobile-menu.open a {
+    color: #F2EEEB;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3B3738;
+    z-index: 900; /* Abaixo do menu mobile e do header */
+    transition: opacity 300ms ease-out;
+}
+
+.overlay.open {
+    display: block;
+}
+
+footer{
+    text-align: center;
+    padding:2px;
+}
+footer p{
+    font-size: 11px;
+}
+
+footer p{
+    margin-top: 0;
+}
+
+#cover {
+    position: relative;
+    width: 100%;
+    height: 260px; /* Ajuste a altura conforme necessário */
+    background-image: url('../img/menino.jpg'); /* Caminho para sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cover h3{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFDDB8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#cover h3{
+    font-size: 18px;
+    margin:0;
+    align-items: center;
+    text-align: center;
+
+}
+
+#cover img{
+    margin-left: 5px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+
+
+.retangle{
+    border: 2px solid #FFDDB8;
+    border-radius: 30px;
+    padding: 2%;
+    text-align: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+
+.sec-home h2{
+    color: #DE8938;
+    text-align: center;
+}
+
+h3{
+    font-size: 17px;
+    margin: 0;
+}
+
+button{
+    background-color: #DE8938;
+    border: none;
+    border-radius: 88px;
+    width: 170px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer
+}
+
+button h3{
+    color: #F2EEEB;
+}
+
+p{
+    font-size: 14px;
+    color: #3B3738;
+    padding-left: 10px;
+}
+
+.juntese p{
+    color: #3B3738;
+}
+
+.juntese{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.artigosrecentes {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative; /* Adicione para posicionar as setas relativas a este container */
+}
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.artigo {
+    flex: 0 0 100%; /* Um artigo por vez */
+    background-color: #FFDDB8;
+    width: 260px;
+    height: 243px;
+    padding-top: 0;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px; /* Espaço entre os artigos */
+}
+
+.tit-artigo {
+    height: 37px;
+    background-color: #3B3738;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo{
+    color: #3B3738;
+}
+
+.cont-autor{
+    padding: 10px;
+}
+
+.autor{
+    color: #3B3738;
+    font-size: 11px;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%; /* Ajusta para o meio verticalmente */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.0);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: 30px;
+}
+
+.carousel-prev {
+    left: -30px; /* Ajusta a posição esquerda */
+}
+
+.carousel-next {
+    right: -30px; /* Ajusta a posição direita */
+}
+
+
+.carousel-inner {
+    display: flex;
+    gap: 10px; /* Espaço entre os artigos */
+    transition: transform 0.5s ease;
+    padding: 10px; /* Adiciona um espaçamento interno para evitar que as setas fiquem muito próximas dos artigos */
+}
+
+
+.artigo h2{
+    color: #FFDDB8;
+}
+
+.contato-form h2{
+color: #DE8938;
+text-align: center;
+align-items: center;
+}
+
+.contato-form{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#name, #email{
+    background-color: #3B3738;
+    width: 90%;
+    border-radius: 6px;
+    border: none;
+    height: 25px;
+    color: #F2EEEB;
+    text-align: center;
+}
+
+#name::placeholder, #email::placeholder{
+    color: #F2EEEB;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+#message::placeholder{
+    color: #3B3738;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contactForm button{
+    color: #F2EEEB;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#message{
+    border: none;
+    background-color: #FFDDB8;
+    height: 170px;
+    width: 90%;
+    text-align: center;
+    color: #3B3738;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.form-infos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#cover-sobre {
+    position: relative;
+    width: 100%;
+    height: 260px; /* Ajuste a altura conforme necessário */
+    background-image: url('../img/cover-sobre.png'); /* Caminho para sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#sobreh2{
+    color: #DE8938;
+    text-align: center;
+}
